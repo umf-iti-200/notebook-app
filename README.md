@@ -1,6 +1,6 @@
 # 📌 Simple ToDo
 
-A minimal task manager for your daily tasks
+A lightweight note-taking and task management app to organize your work
 
 [![GitHub Release](https://img.shields.io/github/release/umf-iti-200/simple-todo.svg)](https://github.com/umf-iti-200/simple-todo/releases/latest)
 [![GitHub contributors](https://img.shields.io/github/contributors/umf-iti-200/simple-todo.svg)](https://github.com/umf-iti-200/simple-todo/graphs/contributors)
