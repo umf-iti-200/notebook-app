@@ -17,6 +17,7 @@ A lightweight note-taking and task management app to organize your work
  - No account system.
  - No front-end validation implemented.
  - Backend validation is minimal and may not cover all edge cases.
+ - All data is sent from the server without any column filtering.
 
 ## Usage Guidelines
 
