@@ -26,7 +26,7 @@ function createCardTitle(id, title) {
     const cardHeader = createElement('div', 'card-header d-flex justify-content-between align-items-center');
 
     cardHeader.innerHTML = `
-        <span>${title}</span>
+        <span class="truncate">${title}</span>
         <div class="dropdown">
             <button class="btn btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"></button>
             <ul class="dropdown-menu dropdown-menu-end">

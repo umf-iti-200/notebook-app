@@ -10,3 +10,12 @@ body {
 .navbar .navbar-brand {
     color: white !important;
 }
+
+.truncate {
+    white-space: nowrap;
+    /* Prevents line breaks */
+    overflow: hidden;
+    /* Hides overflowing text */
+    text-overflow: ellipsis;
+    /* Shows "..." at the end */
+}
