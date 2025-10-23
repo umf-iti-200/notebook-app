@@ -1,0 +1,12 @@
+body {
+    margin-top: 70px;
+    background-color: #EEF0F3;
+}
+
+.navbar {
+    background-color: #3E5AA6 !important;
+}
+
+.navbar .navbar-brand {
+    color: white !important;
+}
