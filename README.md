@@ -1,4 +1,4 @@
-# 📌 Simple ToDo
+# 📝 Notebook App
 
 A lightweight note-taking and task management app to organize your work
 
