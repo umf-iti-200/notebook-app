@@ -1,3 +1,16 @@
+const divNotes = document.querySelector("#notes");
+const formNotes = document.getElementById("form-notes");
+const modalNotes = new bootstrap.Modal('#modal-notes');
+const toastMessage = document.getElementById('toast-message')
+const toastMessageBody = document.getElementById('toast-message-body')
+
+function showMessage(text){
+
+    toastMessageBody.innerText = text;
+
+    bootstrap.Toast.getOrCreateInstance(toastMessage).show()
+
+}
 
 function createElement(tag, className) {
 
@@ -57,10 +70,6 @@ function createNote(note) {
     return card;
 }
 
-const divNotes = document.querySelector("#notes");
-const formNotes = document.getElementById("form-notes");
-const modalNotes = new bootstrap.Modal('#modal-notes');
-
 async function removeNote(id) {
 
     const url = "/api/notes/remove";
@@ -80,8 +89,6 @@ async function removeNote(id) {
         // Reload all the data from the backend
         getData();
     }
-
-    console.log(id)
 }
 
 function updateNotes(notes) {
@@ -135,7 +142,7 @@ async function saveToDo(event) {
         // // Reload all the data from the backend
         getData();
     } else {
-        alert(data.message);
+        showMessage(data.error);
     }
 }
 
@@ -143,26 +150,3 @@ formNotes.addEventListener("submit", saveToDo);
 
 // // Every time the app is loaded, bring all the data from the backend
 getData();
-
-const note = {
-    id: 1,
-    title: "hello",
-    content: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer."
-}
-
-divNotes.appendChild(createNote(note))
-divNotes.appendChild(createNote(note))
-divNotes.appendChild(createNote(note))
-divNotes.appendChild(createNote(note))
-divNotes.appendChild(createNote(note))
-divNotes.appendChild(createNote(note))
-divNotes.appendChild(createNote(note))
-divNotes.appendChild(createNote(note))
-divNotes.appendChild(createNote(note))
-divNotes.appendChild(createNote(note))
-divNotes.appendChild(createNote(note))
-divNotes.appendChild(createNote(note))
-divNotes.appendChild(createNote(note))
-
-
-console.log(createNote(note))

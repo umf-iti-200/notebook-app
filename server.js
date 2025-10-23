@@ -40,7 +40,10 @@ app.post("/api/notes/save", function (req, res) {
 
     pool.query(sql, [title, content], (error, results) => {
 
-        if (error) throw error
+        if (error) {
+            console.error('Error creating note:', error);
+            return res.status(500).json({ error: 'Failed to create note' });
+        }
 
         res.status(200).json("Note created successfully");
     });
@@ -54,7 +57,10 @@ app.post("/api/notes/remove", function (req, res) {
 
     pool.query(sql, [id], (error, results) => {
 
-        if (error) throw error
+        if (error) {
+            console.error('Error creating note:', error);
+            return res.status(500).json({ error: 'Failed to create note' });
+        }
 
         res.status(200).json("Note removed successfully");
     });
