@@ -4,7 +4,7 @@ const modalNotes = new bootstrap.Modal('#modal-notes');
 const toastMessage = document.getElementById('toast-message')
 const toastMessageBody = document.getElementById('toast-message-body')
 
-function showMessage(text){
+function showMessage(text) {
 
     toastMessageBody.innerText = text;
 
@@ -142,7 +142,7 @@ async function saveToDo(event) {
         // // Reload all the data from the backend
         getData();
     } else {
-        showMessage(data.error);
+        showMessage("⚠️ " + data.error);
     }
 }
 

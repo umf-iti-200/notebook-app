@@ -36,6 +36,17 @@ app.post("/api/notes/save", function (req, res) {
 
     let { title, content } = req.body;
 
+    if (!title || !content) {
+        return res.status(500).json({ error: 'Title and content are required' });
+    }
+
+    title = title.trim();
+    content = content.trim();
+
+    if (title === "" || !content === "") {
+        return res.status(500).json({ error: 'Title and content should not be blank' });
+    }
+
     const sql = 'INSERT INTO notes (title, content) VALUES ($1, $2)';
 
     pool.query(sql, [title, content], (error, results) => {
@@ -52,6 +63,10 @@ app.post("/api/notes/save", function (req, res) {
 app.post("/api/notes/remove", function (req, res) {
 
     const { id } = req.body;
+
+    if (!id) {
+        return res.status(500).json({ error: 'id is required' });
+    }
 
     const sql = "DELETE FROM notes WHERE id = $1;";
 
