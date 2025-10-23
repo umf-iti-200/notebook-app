@@ -2,15 +2,15 @@
 
 A lightweight note-taking and task management app to organize your work
 
-[![GitHub Release](https://img.shields.io/github/release/umf-iti-200/simple-todo.svg)](https://github.com/umf-iti-200/simple-todo/releases/latest)
-[![GitHub contributors](https://img.shields.io/github/contributors/umf-iti-200/simple-todo.svg)](https://github.com/umf-iti-200/simple-todo/graphs/contributors)
-[![GitHub stars](https://img.shields.io/github/stars/umf-iti-200/simple-todo.svg)](https://github.com/umf-iti-200/simple-todo)
-![GitHub License](https://img.shields.io/github/license/umf-iti-200/simple-todo)
+[![GitHub Release](https://img.shields.io/github/release/umf-iti-200/notebook-app.svg)](https://github.com/umf-iti-200/notebook-app/releases/latest)
+[![GitHub contributors](https://img.shields.io/github/contributors/umf-iti-200/notebook-app.svg)](https://github.com/umf-iti-200/notebook-app/graphs/contributors)
+[![GitHub stars](https://img.shields.io/github/stars/umf-iti-200/notebook-app.svg)](https://github.com/umf-iti-200/notebook-app)
+![GitHub License](https://img.shields.io/github/license/umf-iti-200/notebook-app)
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
 ## Screenshots
 
-<img src="https://raw.githubusercontent.com/umf-iti-200/simple-todo/main/public/images/screenshot.png" width="60%">
+<img src="https://raw.githubusercontent.com/umf-iti-200/notebook-app/main/public/images/screenshot.png" width="60%">
 
 ## Limitations
 
