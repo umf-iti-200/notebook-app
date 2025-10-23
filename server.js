@@ -47,6 +47,14 @@ app.post("/api/notes/save", function (req, res) {
         return res.status(500).json({ error: 'Title and content should not be blank' });
     }
 
+    if (title.length > 50) {
+        return res.status(500).json({ error: 'Title should have <= 50 characters' });
+    }
+
+    if (content.length > 150) {
+        return res.status(500).json({ error: 'Content should have <= 150 characters' });
+    }
+
     const sql = 'INSERT INTO notes (title, content) VALUES ($1, $2)';
 
     pool.query(sql, [title, content], (error, results) => {
