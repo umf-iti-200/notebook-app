@@ -23,17 +23,39 @@ A lightweight note-taking and task management app to organize your work
 
 **Step 1**: Install all dependencies
 
+Open the terminal and run the following command:
+
 ```bash
 npm install
 ```
 
-**Step 2**: Start the server
+**Step 2**: Create a environment file
+
+Copy `.env.sample` to `.env` and set your environment variables, e.g.:
+
+```properties
+PORT=80
+DB_USER=your_db_user
+DB_PASSWORD=your_db_password
+DB_HOST=localhost
+DB_NAME=your_db_name
+```
+
+**Step 3**: Run database the SQL
+
+Open pgAdmin and run all the SQL from the following file:
+
+```
+db.sql
+```
+
+**Step 4**: Start the server
 
 ```bash
 node server.js
 ```
 
-**Step 3**: Open a browser and go to:
+**Step 5**: Open a browser and go to:
 
 ```url
 http://localhost
